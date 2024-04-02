@@ -1,21 +1,244 @@
+button {
+  cursor: pointer;
+}
+
+:root {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 .pagelink {
-    display: inline-flex;
-    font-size: large;
-    margin: 20px 0;
-    padding: 8px 16px;
-    background-color: #4e75ff;
-    border-radius: 10px;
-    color: aliceblue;
-  }
-  .input-style {
-    padding-block: 16px;
-    padding: 0;
-    background-color: #fff;
-    color: #2e2f42;
-    text-indent: 16px;
-  }
+  display: inline-flex;
+  font-size: large;
+  margin: 20px 0;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  border-radius: 10px;
+  color: aliceblue;
+}
 
-  .timer {
+.timer {
+  display: flex;
+  column-gap: 34px;
+  padding-bottom: 100px;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0px;
+  font-size: large;
+  font-family: 'Montserrat';
+}
+
+span.value {
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+span.label {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+button:disabled {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  line-height: 1.5;
+  width: 75px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #cfcfcf;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+button {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  width: 75px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #4e75ff;
+}
+
+input#datetime-picker.flatpickr-input {
+  font-size: 20px;
+  padding-block: 16px;
+  padding: 0;
+  background-color: #ffffff;
+  color: #2e2f42;
+  text-indent: 16px;
+}
+
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 4px;
+  border-color: #808080;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 32px;
+}
+
+#datetime-picker:hover {
+  border-style: solid;
+  border-color: #000000;
+}
+
+input#datetime-picker.flatpickr-input:active {
+  border-width: 1px;
+  border-color: #4e75ff;
+  border-style: solid;
+}
+
+fieldset {
+  margin: 20px 0;
+  display: flex;
+  max-width: 360px;
+  column-gap: 30px;
+  padding: 0;
+  border-radius: 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #808080;
+}
+fieldset:hover {
+  border-width: 1px;
+  border-color: #000000;
+}
+
+.delay {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  gap: 8px;
+}
+
+legend {
+  border-width: inherit;
+  padding: 0;
+  margin-left: 28px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-family: 'Montserrat';
+}
+
+.input-delay {
+  height: 40px;
+  border-radius: 4px;
+  border-style: solid;
+  border: 1px;
+  border-color: #808080;
+}
+
+input.input-delay {
+  border-style: solid;
+  max-width: 360px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+.fulfilled {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  padding-left: 48px;
+}
+
+.rejected {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  padding-left: 48px;
+}
+
+.create-notification {
+  width: 360px;
+  height: 40px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.create-notification:hover {
+  background-color: #6c8cff;
+
+}
+
+input[type='radio' i] {
+  background-color: initial;
+  cursor: pointer;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 0px 5px;
+  padding: initial;
+  border: initial;
+}
+
+.pagelink:hover {
+  background-color: #6c8cff;
+}
+
+.cont {
+  margin-top: 20px;
+}
+
+.container {
     display: flex;
-  }
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+}
+
+form {
+    width: 400px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+}
+
+.create-notification {
+  width: 360px;
+  height: 40px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+}
